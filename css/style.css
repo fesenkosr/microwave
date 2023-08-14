@@ -1,0 +1,137 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+img {
+    max-width: 100%;
+}
+
+.microwave-container{
+ max-width: 512px;
+margin: 0 auto ;
+
+
+}
+
+section{
+padding: 2em;
+
+}
+.microwave-container__inner {
+display: grid;
+   grid-template-columns: 377px 192px;
+ 
+}
+
+.microwave-door{
+z-index: 1 ;
+padding: 2.5em;
+max-width: 377px;
+height: 320px;
+background-color: #E04127;
+border: #E04127;
+border-radius: 40px;
+
+}
+.microwave-door__glass{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-around;
+ width: auto;
+ height: 245px;
+ border-radius: 10px;
+ background-color:#8bb4c2;
+}
+.plate{
+    max-width: 170px;
+}
+.heat{
+padding-top: 2.5em;
+max-width: 96px;
+
+}
+
+.micrwave-door__shadow{
+max-width: 130px;
+height: 320px;
+border-radius: 0 40px 40px 0;  
+background-color: black;
+opacity: 20%; 
+position: relative;
+left: 207px;
+top: -285px;
+}
+
+.microwave-side-panel{
+    margin-left: -4em;
+    max-width: 192px;
+    height: 320px;
+    background-color:#EACCB0;
+    border-radius: 0 40px 40px 0 ;
+    
+}
+
+.microwave-side-panel__timer{
+    max-width: 192px;
+    height:92px;
+    background-color: #FF9B48;
+    border-radius: 0 30px 0 0;
+    text-align: center;
+   
+}
+.timer{
+    font-style: Inter;
+    padding-top: 1em;
+    line-height: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    color:#B5281D;
+    padding-left: 2em;
+font-family: 'Inter', sans-serif;}
+
+
+
+
+.btn{
+text-transform: uppercase ;
+padding: 0.3em 1em ;   
+background: #FF9B48;
+border-radius: 10px;
+color: #B5281D;
+font-size: 16px;
+font-weight: 700;
+cursor: pointer;
+border: none;
+}
+.microwave-side__button{
+display: flex;
+flex-direction: column;
+gap:2em;
+align-items: flex-end;
+ padding-right: 1.5em;
+ padding-top: 4em;
+}
+
+/*               foot           */
+
+.microwave-foot{
+
+    min-width: 512px;
+    
+    display: flex;
+    justify-content: space-around;
+    gap:5em;
+    
+}
+.stlf{
+width: 60px;
+height: 15px;
+background-color:#FF9B48;
+border-radius: 1px 0px 12px 12px;
+
+}
