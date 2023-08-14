@@ -23,12 +23,11 @@ padding: 2em;
 }
 .microwave-container__inner {
 display: grid;
-   grid-template-columns: 377px 192px;
+grid-template-columns: 377px  192px;
  
 }
 
 .microwave-door{
-z-index: 1 ;
 padding: 2.5em;
 max-width: 377px;
 height: 320px;
@@ -38,10 +37,6 @@ border-radius: 40px;
 
 }
 .microwave-door__glass{
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: space-around;
  width: auto;
  height: 245px;
  border-radius: 10px;
@@ -68,6 +63,7 @@ top: -285px;
 }
 
 .microwave-side-panel{
+    z-index: -2;
     margin-left: -4em;
     max-width: 192px;
     height: 320px;
@@ -98,6 +94,8 @@ font-family: 'Inter', sans-serif;}
 
 
 .btn{
+cursor: pointer;
+min-width: 80px;
 text-transform: uppercase ;
 padding: 0.3em 1em ;   
 background: #FF9B48;
@@ -105,7 +103,6 @@ border-radius: 10px;
 color: #B5281D;
 font-size: 16px;
 font-weight: 700;
-cursor: pointer;
 border: none;
 }
 .microwave-side__button{
@@ -115,6 +112,22 @@ gap:2em;
 align-items: flex-end;
  padding-right: 1.5em;
  padding-top: 4em;
+}
+
+.microwave-door__frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index:-1;
+    position: absolute;
+    top: 32px;
+    padding: 2.5em;
+    min-width: 370px;
+    height: 320px;
+    background-color: #E04127;
+    border: #E04127;
+    border-radius: 40px;
+
 }
 
 /*               foot           */
